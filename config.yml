@@ -1,0 +1,80 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: false
+configure_terminal: false
+configure_osx: false
+
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - docker
+  - docker-compose
+  - git
+  - github/gh/gh
+  - htop
+  - jq
+  - ledger
+  - links
+  - ncdu
+  - nmap
+  - openssl
+  - pyenv
+  - pyenv-virtualenv
+  - ssh-copy-id
+  - task
+  - tldr
+  - tmux
+  - tree
+  - wget
+  - ykman
+  # Probably don't need these, else uncomment:
+  # - antigen
+  # - autoconf
+  # - bash-completion
+  # - cowsay
+  # - doxygen
+  # - gettext
+  # - gifsicle
+  # - go
+  # - gpg
+  # - httpie
+  # - iperf
+  # - kubernetes-cli
+  # - libevent
+  # - mcrypt
+  # - node
+  # - nvm
+  # - php
+  # - pv
+  # - readline
+  # - sqlite
+  # - wrk
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  # - chromedriver
+  - docker
+  # - dropbox
+  # - firefox
+  - google-chrome
+  - iterm2
+  - jetbrains-toolbox
+  - lastpass
+  - rectangle
+  - slack
+  - sublime-text
+  # - vagrant
+  # - visual-studio-code
+
+# oh my zsh
+antigen_install_oh_my_zsh: yes
+
+users:
+  - username: "{{ ansible_env.USER }}"
+    oh_my_zsh:
+      install: yes  
