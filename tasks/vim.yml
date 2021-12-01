@@ -1,0 +1,15 @@
+---
+# TODO: Documentation
+- name: Clone Awesome Vim repo
+  git:
+    repo: "https://github.com/amix/vimrc.git"
+    dest: "~/.vim_runtime"  
+    depth: 1
+  register: vim_repo
+
+- name: Install Awesome Vim 
+  command: >
+    sh ~/.vim_runtime/install_awesome_vimrc.sh
+  changed_when: false
+  when: vim_repo is changed
+

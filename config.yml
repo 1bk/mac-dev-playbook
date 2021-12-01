@@ -1,0 +1,96 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: false
+configure_terminal: false
+configure_osx: false
+configure_vim: true
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - antigen
+  - docker
+  - docker-compose
+  - git
+  - github/gh/gh
+  - htop
+  - jq
+  - kubernetes-cli
+  - ledger
+  - links
+  - ncdu
+  - nmap
+  - openssl
+  - pyenv
+  - pyenv-virtualenv
+  - ssh-copy-id
+  - task
+  - tldr
+  - tmux
+  - tree
+  - wget
+  - ykman
+  - zsh-history-substring-search
+#  - autoconf
+#  - bash-completion
+#  - cowsay
+#  - doxygen
+#  - gettext
+#  - gifsicle
+#  - go
+#  - gpg
+#  - httpie
+#  - iperf
+#  - libevent
+#  - mcrypt
+#  - node
+#  - nvm
+#  - php
+#  - pv
+#  - readline
+#  - sqlite
+#  - wrk
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - bitwarden
+  - discord
+  - docker
+  - firefox
+  - google-chrome
+  - iterm2
+  - jetbrains-toolbox
+  - lastpass
+  - ledger-live
+  - rectangle
+  - signal
+  - slack
+  - steam
+  - sublime-text
+  - surfshark
+  - trezor-suite
+  - vagrant
+  - veracrypt
+  - visual-studio-code
+  - whatsapp
+  - zoom
+#  - chromedriver
+#  - dropbox
+#  - handbrake
+#  - licecap
+#  - sequel-ace
+#  - transmit
+
+# Wether to install by default for all specified users.
+# May be overridden by `oh_my_zsh: install:` under each user.
+# https://github.com/gantsign/ansible-role-oh-my-zsh
+antigen_install_oh_my_zsh: yes
+
+users:
+  - username: "{{ ansible_env.USER }}"
+    oh_my_zsh:
+      install: yes  
