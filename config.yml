@@ -59,6 +59,7 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   # - chromedriver
   - docker
+  - dbeaver-community
   # - dropbox
   # - firefox
   - google-chrome
@@ -66,6 +67,7 @@ homebrew_cask_apps:
   - jetbrains-toolbox
   - lastpass
   - rectangle
+  - robo-3t
   - slack
   - sublime-text
   # - vagrant
