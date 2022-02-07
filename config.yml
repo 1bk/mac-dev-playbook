@@ -62,7 +62,7 @@ homebrew_cask_apps:
   - dbeaver-community
   # - dropbox
   # - firefox
-  - google-chrome
+  # - google-chrome
   - iterm2
   - jetbrains-toolbox
   - lastpass
