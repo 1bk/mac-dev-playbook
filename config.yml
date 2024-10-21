@@ -20,6 +20,7 @@ homebrew_installed_packages:
   - links
   - ncdu
   - nmap
+  # - minikube
   - openssl
   - pyenv
   - pyenv-virtualenv
@@ -54,6 +55,7 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - buo/cask-upgrade
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -73,6 +75,7 @@ homebrew_cask_apps:
   - sublime-text
   - surfshark
   - trezor-suite
+  # - utm
   - vagrant
   - veracrypt
   - visual-studio-code
