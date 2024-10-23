@@ -34,8 +34,10 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - aider
   - antigen
   - autoconf
+  - aws-shell
   - awscli
   - bash-completion
   - cowsay
@@ -54,12 +56,15 @@ homebrew_installed_packages:
   - iperf
   - jq
   - libevent
+  - md5sum
+  - mysql
   - ncdu
   - nmap
   - node
   - nvm
   - openssl
   - php
+  - pipx
   - pv
   - readline
   - saulpw/vd/visidatagit diff
@@ -80,16 +85,18 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - anaconda
+  # - anaconda
   - bitwarden
+  - caffaine
+  - chatgpt
   - chromedriver
   - docker
-  - espanso
   - dropbox
+  - espanso
   - firefox
   - github
-  - grammarly-desktop
   - google-chrome
+  - grammarly-desktop
   - handbrake
   - hiddenbar
   - iterm2
@@ -102,17 +109,17 @@ homebrew_cask_apps:
   - raycast
   - sequel-ace
   - signal
-  - spotify
   - slack
+  - spotify
   - sublime-text
   - surfshark
   - transmit
   - trezor-suite
   - veracrypt
   - visual-studio-code
+  - vlc
   - whatsapp
   - zoom
-  - vlc
 
 
 # See `geerlingguy.mas` role documentation for usage instructions.
